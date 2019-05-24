@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int num,i,j,array[10],total,ave;
+
+	for(i=0;i<10;i++)
+	{
+		cout << "Enter an integer: ";
+		cin >> array[i];
+	}
+	cout << endl << endl;
+
+	for(i=0;i<10;i++)
+	{
+		for(j=0;j<10-i-1;j++)
+		{
+			if (array[j]>array[j+1])
+			{
+				num=array[j];
+				array[j]=array[j+1];
+				array[j+1]=num;
+			}
+		}
+	}
+	
+	cout << "Smallest Integer: " << array[0] << endl;
+	cout << "Largest Integer: " << array[9] << endl;
+
+	total = array[0]+array[1]+array[2]+array[3]+array[4]+array[5]+array[6]+array[7]+array[8]+array[9];
+	ave =total/10;
+
+	cout << "Total: " << total <<endl;
+	cout << "Average: " << ave << endl;
+
+	_getch();
+	return 0;
+}
+	
