@@ -1,0 +1,31 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main(){
+	char array[50];
+	int i,j,size;
+
+	cout << "Array Size: ";
+	cin >> size;
+	
+	for(i=0;i<size;i++){
+		cout << "Enter an element: ";
+		cin >>array[i];
+	}
+
+	cout << endl << endl;
+	
+	cout << "The array in reversed order is ";
+	
+	for(j=size;j>0-1;j--){
+		cout << array[j];
+	}
+
+	cout <<endl;
+
+	cout << "Array Size: " << size;
+	_getch();
+	return 0;
+}
