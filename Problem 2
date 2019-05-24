@@ -1,0 +1,41 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	float ta[7],tb[7],tc[7];
+	int i;
+
+	for(i=0;i<7;i++){
+		cout <<  "Temperature in Province A, Day "<< i+1 << ": ";
+	cin >> ta[i];
+	}
+	for(i=0;i<7;i++){
+		cout << "Temperature in Province B, Day " << i+1 << ": ";
+		cin >> tb[i];
+	}
+	for(i=0;i<7;i++)
+	{
+		cout << "Temperature in Province C, Day " << i+1 << ": ";
+		cin >> tc[i];
+	}
+
+	cout << endl << endl;
+
+	cout << "Temperature in Provinces A, B, and C: " << endl;
+
+	for(i=0;i<7;i++){
+		cout << "Province A, Day " << i+1 << " = " << ta[i] << endl;
+	}
+	for(i=0;i<7;i++){
+		cout << "Province B, Day " << i+1 << " = " << tb[i] << endl;
+	}
+	for(i=0;i<7;i++){
+		cout << "Province C, Day " << i+1 << " = " << tc[i] << endl;
+	}
+
+	_getch();
+	return 0;
+}
